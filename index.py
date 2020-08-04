@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app= Flask(__name__)
-@app.route('/')#Aqui va la url
+@app.route('/')#Contenedor de la url
 def home():
     return render_template('home.html')
 
@@ -10,4 +10,4 @@ def about():
     return render_template('about.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
